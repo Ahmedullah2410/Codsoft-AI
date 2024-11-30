@@ -1,0 +1,91 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    background-color: #007bff;
+    color: white;
+    padding: 20px 0;
+    margin: 0;
+}
+
+.form-container {
+    margin: 30px auto;
+    max-width: 500px;
+    text-align: left;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.checkbox-group label {
+    display: block;
+    margin: 8px 0;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Book List Styles */
+.book-list {
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    padding: 0 20px;
+}
+
+.book {
+    flex: 1 1 calc(30% - 15px); 
+    max-width: calc(30% - 15px);
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    text-align: left;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.book h3 {
+    margin: 0;
+    color: #007bff;
+}
+
+.book p {
+    margin: 5px 0;
+}
+
+@media (max-width: 768px) {
+    .book {
+        flex: 1 1 calc(45% - 15px);
+        max-width: calc(45% - 15px);
+    }
+}
+
+@media (max-width: 480px) {
+    .book {
+        flex: 1 1 100%; 
+        max-width: 100%;
+    }
+}
